@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: ctc
+  
+  mvc.pathmatch.matching-strategy: ANT_PATH_MATCHER
+
+  datasource:
+    url: jdbc:h2:mem:emigreatdb;INIT=CREATE SCHEMA IF NOT EXISTS BANK
+    driver-class: org.h2.Driver
+    username: sa
+    password: sa
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+      path: /h2-console # you can login the DB on http://localhost:5000/h2-console, where 5000 is the Tomcat port  sql:    init:      mode: always
+
+server:
+     port: 5000
+  
+logging:
+  level:
+    com.emigreat.bank.controller: INFO
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+    org.springframework.security: INFO
+    
+    

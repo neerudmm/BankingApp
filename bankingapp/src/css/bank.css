@@ -1,0 +1,15 @@
+.table {
+    display: table;
+    width: 100%;
+}
+.header{
+    display: table-cell;    
+}
+.row {
+    display: table-row; 
+}
+.cell {
+    display: table-cell;
+    width: 100%;
+    border: 0px solid red;
+}
