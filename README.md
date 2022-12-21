@@ -75,6 +75,10 @@ Test cases are implemented for testing the Application REST endpoint with differ
 
 API documentation is implemented through Swagger UI
 #  Swagger UI Test
+Application is running in port 5000.
+
+Swagger URL : http://localhost:5000/swagger-ui/index.html
+
 ![Swagger UI API Call](./images/Swagger_UI.jpg)
 
 ![Swagger UI API Call](./images/Swagger_UI_Transaction.jpg)
